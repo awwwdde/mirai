@@ -1,9 +1,9 @@
 
 function App() {
   return (
-    <>
-    hello world
-    </>
+    <div className="flex items-center justify-center min-h-screen">
+      meow 
+    </div>
   )
 }
 
