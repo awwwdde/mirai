@@ -8,17 +8,17 @@ const Menu = () => {
     { path: '/about', label: 'О сервисе' },
     { path: '/gallery', label: 'Галерея' },
     { path: '/partners', label: 'Партнерам' },
-    { path: '/profile', label: 'Личный кабинет' }
+    { path: '/profile', label: 'Регистрация' }
   ]
 
   return (
-    <div className="relative flex items-center w-full px-8 pt-8 h-[72px]">
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 flex justify-center items-center w-[72px] h-[72px]">
+    <div className="flex items-center w-full px-8 pt-8 h-[72px] justify-between">
+      <div className="ml-[45px] flex items-center">
         <Link to="/">
           <MirIcon width={48} height={48} color="#000" />
         </Link>
       </div>
-      <nav className="ml-auto flex flex-row space-x-[30px] p-6 bg-white shadow-lg rounded-lg mr-[20px]">
+      <nav className="flex flex-row space-x-[30px] p-6 bg-white shadow-lg rounded-lg mr-[45px]">
         {menuItems.map((item) => (
           <Link
             key={item.path}
