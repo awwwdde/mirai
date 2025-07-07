@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
+import MirIcon from './MirIcon'
 
 const Menu = () => {
   const location = useLocation()
 
   const menuItems = [
-    { path: '/' , label: 'Главная'},
     { path: '/about', label: 'О сервисе' },
     { path: '/gallery', label: 'Галерея' },
     { path: '/partners', label: 'Партнерам' },
@@ -12,8 +12,13 @@ const Menu = () => {
   ]
 
   return (
-    <div className="flex justify-end w-full">
-      <nav className="flex flex-row space-x-[30px] p-6 bg-white shadow-lg rounded-lg mt-[20px] mr-[20px]">
+    <div className="relative flex items-center w-full px-8 pt-8 h-[72px]">
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 flex justify-center items-center w-[72px] h-[72px]">
+        <Link to="/">
+          <MirIcon width={48} height={48} color="#000" />
+        </Link>
+      </div>
+      <nav className="ml-auto flex flex-row space-x-[30px] p-6 bg-white shadow-lg rounded-lg mr-[20px]">
         {menuItems.map((item) => (
           <Link
             key={item.path}
