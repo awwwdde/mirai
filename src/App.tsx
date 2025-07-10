@@ -3,8 +3,9 @@ import Menu from './widgets/menu'
 import AboutService from './pages/AboutService'
 import Gallery from './pages/Gallery'
 import Partners from './pages/Partners'
-import Profile from './pages/Profile'
+import Registration from './pages/RegistrationPage'
 import MainMirai from './pages/MainMirai'
+import Auth from './pages/AuthProfile'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path="/about" element={<AboutService />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
     </div>

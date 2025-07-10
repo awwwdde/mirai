@@ -8,7 +8,8 @@ const Menu = () => {
     { path: '/about', label: 'О сервисе' },
     { path: '/gallery', label: 'Галерея' },
     { path: '/partners', label: 'Партнерам' },
-    { path: '/profile', label: 'Регистрация' }
+    { path: '/registration', label: 'Регистрация' },
+    { path: '/auth', label: 'Войти' }
   ]
 
   return (
