@@ -10,7 +10,9 @@ import Auth from './pages/AuthProfile'
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Menu />
+      <div className="relative z-[9999]">
+        <Menu />
+      </div>
       <div className="flex-1 h-full">
         <Routes>
           <Route path="/" element={<MainMirai />} />

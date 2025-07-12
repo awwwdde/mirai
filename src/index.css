@@ -2,6 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'Arrogant';
+  src: url('./fonts/Arrogant-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arrogant';
+  src: url('./fonts/Arrogant-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arrogant';
+  src: url('./fonts/Arrogant-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shoebox';
+  src: url('./fonts/Shoebox-ToTheLeft.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shoebox';
+  src: url('./fonts/Shoebox-ToTheRight.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./fonts/AeonikProTRIAL-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./fonts/AeonikProTRIAL-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./fonts/AeonikProTRIAL-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Классы для шрифтов */
+.font-arrogant {
+  font-family: 'Arrogant', sans-serif;
+}
+
+.font-shoebox {
+  font-family: 'Shoebox', sans-serif;
+}
+
+.font-aeonik {
+  font-family: 'Aeonik', sans-serif;
+}
+
+/* Стили для заголовков */
+h1 {
+  font-family: 'Arrogant', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Shoebox', sans-serif;
+  font-weight: normal;
+}
+
+/* Стили для основного текста */
+body, p, span, div {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: normal;
+}
+
 :root {
   margin: 0;
   padding: 0;
@@ -14,10 +101,18 @@ html, body {
   background: linear-gradient(to bottom, #4E81C4, #356EBE);
 }
 
-
 .menu-link, .menu-link:visited, .menu-link:active {
-  color: #fff !important;
-  text-decoration: none !important;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  z-index: 10000;
+}
+
+.menu-link:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 
