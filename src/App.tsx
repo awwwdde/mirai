@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Menu />
-      <div className="flex-1 ">
+      <div className="flex-1 h-full">
         <Routes>
           <Route path="/" element={<MainMirai />} />
           <Route path="/about" element={<AboutService />} />
