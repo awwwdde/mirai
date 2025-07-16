@@ -107,7 +107,7 @@ html, body {
   cursor: pointer;
   user-select: none;
   position: relative;
-  z-index: 10000;
+  z-index: 50;
 }
 
 .menu-link:hover {
