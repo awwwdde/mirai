@@ -41,25 +41,29 @@ const MainMirai = () => {
         </div>
         <div ref={secondBlockRef} className="flex justify-center text-center flex-col" 
         style={{ width: '100%', minHeight: '100vh', background: '#fff', margin: 0, padding: 0, position: 'relative', borderRadius: '25px' }}>
-          <h2 className="text-white font-extrabold font-shoebox"
-          style={{ fontSize: '96px', letterSpacing: '0.1em',  textShadow: '0 4px 4px rgba(0,0,0,0.25)', lineHeight: 1, zIndex: 1, position: 'relative' }}>нАШ смысл</h2>
-          <p className="font-bold"
-              style={{ fontSize: '24px', width: '525px', margin: '0 auto' }}
-            >Поймите почему стоит использовать этот сервис!</p>
-                <Button 
+          <div>
+            <h2 className="text-white font-extrabold font-shoebox"
+            style={{ fontSize: '96px', color: '#487CC2', textShadow: '0 4px 4px rgba(0,0,0,0.25)', zIndex: 1, position: 'relative', marginBottom: 0 }}>
+              Наш смысл
+            </h2>
+            <p className="font-bold"
+                style={{ fontSize: '24px', width: '525px', margin: '0 auto', marginTop: 0 }}
+              >Поймите почему стоит использовать этот сервис!</p>
+              <Button 
                 text="Подробнее"
                 color="#ffffff"
                 circleColor="#000000"
                 backgroundColor="#000000"
-                className="font-bold font-aeonik"
                 style={{
                   width: '200px',
                   height: '40px',
                   fontSize: '16px',
-                  marginTop: '-5px'
+                  marginTop: '30px'
                 }}
               />
-        </div>
+          </div>
+          </div>
+          
       </div>
     )
   }
