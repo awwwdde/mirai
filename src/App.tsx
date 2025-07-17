@@ -6,6 +6,7 @@ import Partners from './pages/Partners'
 import Registration from './pages/RegistrationPage'
 import MainMirai from './pages/MainMirai'
 import Auth from './pages/AuthProfile'
+import Footer from './widgets/footer'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }

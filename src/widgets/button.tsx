@@ -17,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   text,
   color = '#ffffff',
   backgroundColor = '#3b82f6',
+  borderColor,
   circleColor = '#ffffff',
   onClick,
   disabled = false,
@@ -31,6 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       style={{
         color: color,
         backgroundColor: backgroundColor,
+        border: `2px solid ${borderColor || backgroundColor}`,
         borderRadius: '25px',
         cursor: disabled ? 'not-allowed' : 'pointer',
         ...style
